@@ -13,7 +13,7 @@ import { setContext } from "apollo-link-context";
 // import { InMemoryCache } from 'apollo-cache-inmemory'
 
 const httpLink = createHttpLink({
-  uri: "http://localhost:5000",
+  uri: "https://lavender-macaw-kit.cyclic.app/",
 });
 const authLink = setContext(() => {
   const token = localStorage.getItem("jwtToken");
